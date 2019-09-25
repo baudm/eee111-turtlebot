@@ -8,4 +8,4 @@ Turtlebot Setup
 
 ## Turtlebot Bringup
 1. Put the correct WiFi SSID and pre-shared key into `wpa_supplicant.conf`.
-2. Run the setup script as root: `sudo setup.sh`
+2. Run the setup script as root: `sudo ./setup.sh`
