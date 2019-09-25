@@ -7,4 +7,5 @@ Turtlebot Setup
 3. `Boot Options` -> `Wait for Network at Boot`. Select `Yes`.
 
 ## Turtlebot Bringup
-```sudo setup.sh```
+1. Put the correct WiFi SSID and pre-shared key into `wpa_supplicant.conf`.
+2. Run the setup script as root: `sudo setup.sh`
