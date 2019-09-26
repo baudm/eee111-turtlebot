@@ -1,13 +1,14 @@
-# eee111-turtlebot
-Turtlebot Setup
+# TurtleBot Setup for EEE 111
 
 ## Network Configuration
-All EEE 111 devices should have a static IP and should use the subnet `10.158.25.0/24`:
-- TurtleBots should use `.10` to `.99` (use the last two digits of the bot's serial number)
-- Workstations should use `.100` to `.199`
+All EEE 111 devices should have a static IP and should use the subnet `10.158.25.0/24`. Allocation is as follows:
+- `.1` to `.9` - reserved
+- `.10` to `.99` - for TurtleBots (use the last two digits of the bot's serial number)
+- `.100` to `.254` - for the students' workstations
 
 ## Automated Setup
 ```Usage: ./setup.sh <SSID> <PSK> <last octet of IP address>```
+
 The `setup.sh` script will need the following details:
 1. WiFi SSID
 2. WiFi PSK (password)
