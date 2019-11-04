@@ -29,9 +29,11 @@ raspi-config nonint do_boot_behaviour B1
 # Wait for network
 raspi-config nonint do_boot_wait 0
 
-# TurtleBot "bringup" nodes
+# Install TurtleBot "bringup" nodes
 install -D -m755 turtlebot-bringup.sh "$PREFIX/usr/local/bin/turtlebot-bringup.sh"
 install -D -m644 turtlebot-bringup.service "$PREFIX/lib/systemd/system/turtlebot-bringup.service"
+# Enable the bringup service
+systemctl enable turtlebot-bringup.service
 
 # Network configuration (WiFi)
 mkdir -p "$PREFIX/etc/wpa_supplicant"
